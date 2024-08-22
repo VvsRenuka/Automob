@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Automob Mechanic</title>
+    <link rel="icon" type="image/x-icon" href="./images/car.jpg">
+</head>
+<body style="background-color: rgb(247, 245, 143);">
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: 1000; color: chocolate; text-align: center;">AUTOMOB-MECHANIC</h1>
+    <aside style="background-color: rgb(252, 250, 250); border-color: rgb(14, 14, 13);">
+        <a href="Home.html">Home&nbsp;|&nbsp;</a>
+        <a href="Services.html" target="-blank">Services&nbsp;|&nbsp;</a>
+        <a href="Booking.html" target="-blank">Booking&nbsp;|&nbsp;</a>
+        <a href="mailto:contact@automob.co.in?" subject="Hello%20Can%10I%10book%10an%10appoinment">E-mail &#128231&nbsp;|&nbsp;</a>
+        <a href="tel:+91xxxxxxxxxx"> Call Us&#128222</a><hr>
+    </aside>
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-weight: 1000; color: chocolate; text-align: center;">Book Your Service</h2>
+    <table style="background-color: beige; border: 2px solid brown;" cellpadding="10" cellspacing="10" width="40%" align="center">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" pattern="[a-z][A-Z] [a-z][A-Z]" placeholder="Firstname  Lastname"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" pattern="[a-z]@[a-z].[a-z]" placeholder="xyz@abc.com"></td>
+        </tr>
+        <tr>
+            <td>Code:</td>
+            <td><select id="code" name="code">
+                <option value="None">None</option>
+                <option value="+213">+213</option>
+                <option value="+244">+244</option>
+                <option value="+61">+61</option>
+                <option value="+91">+91</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Phone number:</td>
+            <td><input type="number" name="number" placeholder="XXXXXXXXXX" pattern="[0-9]{10}"></td>
+        </tr>
+        <tr>
+            <td>Select Service:</td>
+            <td><select id="service" name="service">
+                <option value="null">None</option>
+                <option value="Preventive maintainence service">Preventive maintainence service</option>
+                <option value="Body repair service">Body repair service</option>
+                <option value="Car care service">Car care service</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Car make:</td>
+            <td><input list="car make" name="car make">
+                <datalist id="car make">
+                    <option value="Mahindra">Mahindra</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Ferrari">Ferrari</option>
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>Car Model:</td>
+            <td><input type="text" name="car model"></td>
+        </tr>
+        <tr>
+            <td>Fuel type:</td>
+            <td><input type="radio" id="r1" name="fuel type" value="petrol">
+                <label for="r1">Petrol</label>
+                <input type="radio" id="r1" name="fuel type" value="Diesel">
+                <label for="r1">Diesel</label>
+                <input type="radio" id="r1" name="fuel type" value="LPO">
+                <label for="r1">LPO</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Kilometers ran:</td>
+            <td><input type="text" name="kilometers"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="document.location='Appointment.html'">Schedule an appointment</button></td>
+        </tr>
+    </table><br><br>
+    <hr>
+    <footer>
+        <p>Copyright &copy; 2024 Automob-Mechanic. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment | Automob Mechanic</title>
+    <link rel="icon" type="image/x-icon" href="./images/car.jpg">
+</head>
+<body style="background-color: rgb(247, 245, 143);">
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: 1000; color: chocolate; text-align: center;">AUTOMOB-MECHANIC</h1>
+    <aside style="background-color: rgb(252, 250, 250); border-color: rgb(14, 14, 13);">
+        <a href="Home.html">Home&nbsp;|&nbsp;</a>
+        <a href="Services.html" target="-blank">Services&nbsp;|&nbsp;</a>
+        <a href="Booking.html" target="-blank">Booking&nbsp;|&nbsp;</a>
+        <a href="mailto:contact@automob.co.in?" subject="Hello%20Can%10I%10book%10an%10appoinment">E-mail &#128231&nbsp;|&nbsp;</a>
+        <a href="tel:+91xxxxxxxxxx"> Call Us&#128222</a><hr>
+    </aside>
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-weight: 1000; color: chocolate; text-align: center;">Schedule your appointment</h2>
+    <table style="background-color: beige; border: 2px solid brown;" cellpadding="10" cellspacing="10" width="40%" align="center">
+        <tr>
+            <td>Appointment Date:</td>
+            <td><input type="date" id="appointment" name="appointment"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><textarea rows="10" cols="50"></textarea></td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td><input type="text" id="city" name="city"></td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td><input list="State" name="State" placeholder="state">
+                <datalist id="State">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karanataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="UttaraKhand">UttaraKhand</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="West Bengal">West Bengal</option>
+                </datalist></td>
+        </tr>
+        <tr>
+            <td>Notification:</td>
+            <td><input type="checkbox" id="r1" value="email">
+            <label for="r1">Email</label>
+            <input type="checkbox" id="r2" value="sms">
+            <label for="r2">SMS</label></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="document.location='Booking-success.html'">Book</button></td>
+        </tr>
+    </table>
+    <hr>
+    <footer>
+        <p>Copyright &copy; 2024 Automob-Mechanic. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
